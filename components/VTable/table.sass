@@ -1,0 +1,75 @@
+[class^="lhe-table"]
+  box-sizing: border-box
+
+.lhe-table
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  color: rgba(0, 0, 0, 0.88)
+  font-size: 14px
+  line-height: 1.5714285714285714
+  list-style: none
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji'
+  background: #ffffff
+  border-radius: 8px 8px 0 0
+
+  &-container
+    border-start-start-radius: 8px
+    border-start-end-radius: 8px
+    border-inline-start: 1px solid #f0f0f0
+  
+    table
+      width: 100%
+      text-align: start
+      border-radius: 8px 8px 0 0
+      border-collapse: separate
+      border-spacing: 0
+      border-top: 1px solid #f0f0f0
+
+      & thead, & tbody
+        tr
+          th, td
+            position: relative
+            padding: 16px 16px
+            overflow-wrap: break-word
+            border-inline-end: 1px solid #f0f0f0
+
+            &.center
+              text-align: center
+
+            &.left
+              text-align: left
+
+            &.right
+              text-align: right
+      
+      & thead
+        & > tr:first-child 
+          & > *:last-child
+            border-start-end-radius: 8px
+
+          & > *:first-child
+            border-start-start-radius: 8px
+        
+        & tr
+          th, td
+            position: relative
+            color: rgba(0, 0, 0, 0.88)
+            font-weight: 600
+            text-align: start
+            background: #fafafa
+            border-bottom: 1px solid #f0f0f0
+            transition: background 0.2s ease
+          
+          & > th[colspan]:not([colspan='1'])
+            text-align: center
+
+      & tbody
+        tr
+          td
+            border-bottom: 1px solid #f0f0f0
+            border-inline-end: 1px solid #f0f0f0
+          
+          &:hover
+            & td
+              background: #fafafa
